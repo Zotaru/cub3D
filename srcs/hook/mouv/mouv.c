@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   mouv.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wfreulon <wfreulon@student.42.fr>          +#+  +:+       +#+        */
+/*   By: amonier <amonier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 14:45:36 by amonier           #+#    #+#             */
-/*   Updated: 2023/12/12 17:58:50 by wfreulon         ###   ########.fr       */
+/*   Updated: 2023/12/28 17:22:05 by amonier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ void	keycode_122(t_vars *vars)
 		applied_move_on_body((vars->infos)->body_player, \
 			((vars->infos)->body_player)->front_ray);
 		change_sprite(vars, vars->infos->sprite);
-		clear_image(vars->img);
 		raycast_two(vars, vars->infos);
 		mlx_put_image_to_window(vars->mlx, vars->win, (vars->img)->img, 0, 0);
 	}
@@ -34,7 +33,6 @@ void	keycode_115(t_vars *vars)
 		applied_move_on_body((vars->infos)->body_player, \
 			((vars->infos)->body_player)->back_ray);
 		change_sprite(vars, vars->infos->sprite);
-		clear_image(vars->img);
 		raycast_two(vars, vars->infos);
 		mlx_put_image_to_window(vars->mlx, vars->win, (vars->img)->img, 0, 0);
 	}
@@ -48,7 +46,6 @@ void	keycode_113(t_vars *vars)
 		applied_move_on_body((vars->infos)->body_player, \
 			((vars->infos)->body_player)->left_ray);
 		change_sprite(vars, vars->infos->sprite);
-		clear_image(vars->img);
 		raycast_two(vars, vars->infos);
 		mlx_put_image_to_window(vars->mlx, vars->win, (vars->img)->img, 0, 0);
 	}
@@ -62,7 +59,6 @@ void	keycode_100(t_vars *vars)
 		applied_move_on_body((vars->infos)->body_player, \
 			((vars->infos)->body_player)->right_ray);
 		change_sprite(vars, vars->infos->sprite);
-		clear_image(vars->img);
 		raycast_two(vars, vars->infos);
 		mlx_put_image_to_window(vars->mlx, vars->win, (vars->img)->img, 0, 0);
 	}

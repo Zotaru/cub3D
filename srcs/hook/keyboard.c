@@ -6,7 +6,7 @@
 /*   By: amonier <amonier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 00:24:51 by amonier           #+#    #+#             */
-/*   Updated: 2023/12/12 02:12:53 by amonier          ###   ########.fr       */
+/*   Updated: 2023/12/28 17:21:37 by amonier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ static void	left(t_vars *param)
 {
 	rotate_all_vector(param->infos->body_player, -1.0);
 	rotate_fov(param->infos->body_player->fov_tab, -1.0);
-	clear_image(param->img);
 	raycast_two(param, param->infos);
 	mlx_put_image_to_window(param->mlx, param->win, ((param->img)->img), 0, 0);
 }
@@ -33,7 +32,6 @@ static void	right(t_vars *param)
 {
 	rotate_all_vector(param->infos->body_player, 1.0);
 	rotate_fov(param->infos->body_player->fov_tab, 1.0);
-	clear_image(param->img);
 	raycast_two(param, param->infos);
 	mlx_put_image_to_window(param->mlx, param->win, ((param->img)->img), 0, 0);
 }

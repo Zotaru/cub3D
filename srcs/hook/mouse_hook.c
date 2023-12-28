@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   mouse_hook.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wfreulon <wfreulon@student.42.fr>          +#+  +:+       +#+        */
+/*   By: amonier <amonier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/10 21:21:46 by amonier           #+#    #+#             */
-/*   Updated: 2023/12/10 16:49:31 by wfreulon         ###   ########.fr       */
+/*   Updated: 2023/12/28 17:21:44 by amonier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 // 		+ (mlx->axe)->x_min;
 // 	mlx->julia_y = (mlx->axe)->y_max - (y * ((mlx->axe)->y_max
 // 				- (mlx->axe)->y_min) / IMG_WIDTH);
-// 	clear_image(mlx->img);
 // 	my_mlx_julia_fract(mlx->img, mlx->julia_x, mlx->julia_y, *(mlx->axe));
 // 	mlx_put_image_to_window(mlx->mlx, mlx->win, (mlx->img)->img, 0, 0);
 // }

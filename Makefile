@@ -6,7 +6,7 @@
 #    By: amonier <amonier@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/16 22:27:42 by amonier           #+#    #+#              #
-#    Updated: 2023/12/12 18:25:05 by amonier          ###   ########.fr        #
+#    Updated: 2023/12/28 17:20:42 by amonier          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,6 @@ DIR_OBJS_B	= obj_bonus
 SRCS_NAMES		=	\
 	main.c				\
 	my_mlx_pixel_put.c	\
-	clear_image.c		\
 	sprite_ges.c		\
 	mlx/init.c					\
 	mlx/destroy.c				\
@@ -93,7 +92,6 @@ SRCS_NAMES		=	\
 BONUS_SRCS_NAMES	=	\
 	main.c				\
 	my_mlx_pixel_put.c	\
-	clear_image.c		\
 	sprite_ges.c		\
 	mlx/init.c					\
 	mlx/destroy.c				\

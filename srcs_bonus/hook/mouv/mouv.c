@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   mouv.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wfreulon <wfreulon@student.42.fr>          +#+  +:+       +#+        */
+/*   By: amonier <amonier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 14:45:36 by amonier           #+#    #+#             */
-/*   Updated: 2023/12/12 17:59:52 by wfreulon         ###   ########.fr       */
+/*   Updated: 2023/12/28 17:22:39 by amonier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ void	keycode_122(t_vars *vars)
 		applied_move_on_body((vars->infos)->body_player, \
 			((vars->infos)->body_player)->front_ray);
 		change_sprite(vars, vars->infos->sprite);
-		clear_image(vars->img);
 		raycast_two(vars, vars->infos);
 		create_mini_map(vars, (vars->infos), 320, 180);
 		color_point_lst(vars, \
@@ -45,7 +44,6 @@ void	keycode_115(t_vars *vars)
 		applied_move_on_body((vars->infos)->body_player, \
 			((vars->infos)->body_player)->back_ray);
 		change_sprite(vars, vars->infos->sprite);
-		clear_image(vars->img);
 		raycast_two(vars, vars->infos);
 		create_mini_map(vars, (vars->infos), 320, 180);
 		color_point_lst(vars, \
@@ -70,7 +68,6 @@ void	keycode_113(t_vars *vars)
 		applied_move_on_body((vars->infos)->body_player, \
 			((vars->infos)->body_player)->left_ray);
 		change_sprite(vars, vars->infos->sprite);
-		clear_image(vars->img);
 		raycast_two(vars, vars->infos);
 		create_mini_map(vars, (vars->infos), 320, 180);
 		color_point_lst(vars, \
@@ -95,7 +92,6 @@ void	keycode_100(t_vars *vars)
 		applied_move_on_body((vars->infos)->body_player, \
 			((vars->infos)->body_player)->right_ray);
 		change_sprite(vars, vars->infos->sprite);
-		clear_image(vars->img);
 		raycast_two(vars, vars->infos);
 		create_mini_map(vars, (vars->infos), 320, 180);
 		color_point_lst(vars, \

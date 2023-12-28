@@ -6,7 +6,7 @@
 /*   By: amonier <amonier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 17:10:10 by wfreulon          #+#    #+#             */
-/*   Updated: 2023/12/12 02:34:26 by amonier          ###   ########.fr       */
+/*   Updated: 2023/12/28 17:22:12 by amonier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,6 @@ int	change_status_sprite(void *tvars)
 		vars->infos->img_sprite->status = 3;
 	else if (vars->infos->img_sprite->status == 3)
 		vars->infos->img_sprite->status = 1;
-	clear_image(vars->img);
 	raycast_two(vars, vars->infos);
 	create_mini_map(vars, (vars->infos), 320, 180);
 	color_point_lst(vars, ((vars->infos)->body_player)->body_point, 0x0000FF00);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3D.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wfreulon <wfreulon@student.42.fr>          +#+  +:+       +#+        */
+/*   By: amonier <amonier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 15:20:13 by amonier           #+#    #+#             */
-/*   Updated: 2023/12/11 17:23:08 by wfreulon         ###   ########.fr       */
+/*   Updated: 2023/12/28 17:21:20 by amonier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -246,7 +246,6 @@ typedef struct s_vars
 
 // fonction a faire plus rapide selon la mlx doc:
 void			my_mlx_pixel_put(t_data *data, int x, int y, int color);
-void			clear_image(t_data *img);
 
 //----------------------MLX---------------------------
 

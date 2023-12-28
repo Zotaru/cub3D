@@ -6,7 +6,7 @@
 /*   By: amonier <amonier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 17:10:10 by wfreulon          #+#    #+#             */
-/*   Updated: 2023/12/12 02:10:54 by amonier          ###   ########.fr       */
+/*   Updated: 2023/12/28 17:21:26 by amonier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,6 @@ int	change_status_sprite(void *tvars)
 		vars->infos->img_sprite->status = 3;
 	else if (vars->infos->img_sprite->status == 3)
 		vars->infos->img_sprite->status = 1;
-	clear_image(vars->img);
 	raycast_two(vars, vars->infos);
 	mlx_put_image_to_window(vars->mlx, vars->win, (vars->img)->img, 0, 0);
 	return (vars->infos->img_sprite->status);
