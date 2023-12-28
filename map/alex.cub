@@ -1,0 +1,13 @@
+NO ./texture/marbface_64_64.xpm
+SO ./texture/marbface_2_64_64.xpm
+WE ./texture/marbface_3_64_64.xpm
+EA ./texture/mur_lamp_64_64.xpm
+
+F 109,7,26
+C 203,10,45
+
+1111111111
+1000000001
+1000000001
+1111N00111
+1111111111
