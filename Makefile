@@ -6,7 +6,7 @@
 #    By: amonier <amonier@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/16 22:27:42 by amonier           #+#    #+#              #
-#    Updated: 2023/12/28 17:20:42 by amonier          ###   ########.fr        #
+#    Updated: 2023/12/28 17:39:30 by amonier          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -167,7 +167,7 @@ OBJS		= $(addprefix $(DIR_OBJS)/,$(OBJS_NAMES))
 OBJS_BONUS	= $(addprefix $(DIR_OBJS_B)/,$(OBJS_NAMES_B))
 
 CC			= cc 
-CFLAGS		= -Wall -Wextra -Werror 
+CFLAGS		= -Wall -Wextra -Werror -g3
 CFLAGSBONUS	= -g3 -O2 -O3 -march=native -funroll-loops -ffast-math -fomit-frame-pointer
 # CFLAGSBONUS	= -pthread
 HEAD		= -IIncludes -Iminilibx-linux

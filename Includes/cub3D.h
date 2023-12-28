@@ -6,7 +6,7 @@
 /*   By: amonier <amonier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 15:20:13 by amonier           #+#    #+#             */
-/*   Updated: 2023/12/28 17:21:20 by amonier          ###   ########.fr       */
+/*   Updated: 2023/12/28 17:34:11 by amonier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -249,9 +249,11 @@ void			my_mlx_pixel_put(t_data *data, int x, int y, int color);
 
 //----------------------MLX---------------------------
 
-void			init_window(t_vars *vars, t_data *img);
-t_vars			*init_all(void);
+void			init_window(t_vars *vars, t_data *img, t_infos *infos);
+t_vars			*init_all(t_infos *infos);
 void			destroy(t_vars *vars);
+
+void			free_infos_before(t_infos *infos);
 
 //-> HOOK
 

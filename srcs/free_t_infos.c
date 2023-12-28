@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   free_t_infos.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wfreulon <wfreulon@student.42.fr>          +#+  +:+       +#+        */
+/*   By: amonier <amonier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 13:38:37 by amonier           #+#    #+#             */
-/*   Updated: 2023/12/11 16:51:07 by wfreulon         ###   ########.fr       */
+/*   Updated: 2023/12/28 17:43:18 by amonier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,4 +46,16 @@ void	free_t_infos(t_infos *infos)
 	ft_lst_wall_clear(&(infos->wall));
 	free(infos);
 	return ;
+}
+
+void	free_infos_before(t_infos *infos)
+{
+	free_tex_infos(infos);
+	ft_lst_sprite_clear(&(infos->sprite));
+	free(infos->texture);
+	free(infos->player);
+	free_double_tab_char((infos->map)->map);
+	free(infos->map);
+	ft_lst_wall_clear(&(infos->wall));
+	free(infos);
 }

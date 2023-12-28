@@ -6,7 +6,7 @@
 /*   By: amonier <amonier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 15:19:44 by amonier           #+#    #+#             */
-/*   Updated: 2023/12/12 02:15:23 by amonier          ###   ########.fr       */
+/*   Updated: 2023/12/28 17:27:35 by amonier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	main(int argc, char **argv)
 	t_infos	*infos;
 
 	infos = parsing(argc, argv);
-	vars = init_all();
+	vars = init_all(infos);
 	vars->infos = infos;
 	simplifying_wall(&(infos->wall));
 	texture_check(infos, vars);
